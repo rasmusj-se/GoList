@@ -10,8 +10,8 @@ A more detailed documentation is available at https://godoc.org/github.com/rasmu
 
 ## HashMap
 
-Go already contains a HashMap, you should use the already existing one over mine for your own project.
-However, GoList contains an implementation to a self implemented HashMap.
+The HashMap automatically grows and shrinks as data is inserted or removed.
+It grows in the order of 2^m. (Note: For big data this could mean a large HashMap)
 
 Initialization:
 
@@ -20,6 +20,16 @@ hashmap := &HashMap{}
 hashmap.Initialize()
 ```
 
-Insert: `.Insert(key string, value interface{})` Usually an O(1) operation, depends on potential key collisions.
-Get: `.Get(key string) (interface{})` Usually an O(1) operation, depends on potential key collisions.
-Insertion: `hashmap.Insert(key string, value interface{})` Usually an O(1) operation, depends on potential key collisions.
+Insert: `.Insert(key string, value interface{})` 
+
+Best: O(1). Worst: O(n)
+
+Get: `.Get(key string) (interface{})` 
+
+Best: O(1). Worst: O(n)
+
+Insertion: `hashmap.Insert(key string, value interface{})` 
+
+Best: O(1). Worst: O(n)
+
+*Note: Go already contains a standard implementation of a hashmap known as only map. Use that over GoList!*
