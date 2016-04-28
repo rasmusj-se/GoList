@@ -9,13 +9,11 @@ func TestInsort(t *testing.T){
         return a.(int) < b.(int)
     }
     //List to sort
-    list := [10]int{9,8,7,6,5,4,3,2,1,0}
+    list := Sortable{9,8,7,6,5,4,3,2,1,0}
     //Commit the items to sort into the sorter
-    for _, v := range list{
-        sorter.Put(v)
-    }
-    sorted, _ := sorter.Sort()
-    for i, v := range sorted{
+    list , _ = sorter.Sort(list)
+    //Check if list was sorted
+    for i, v := range list{
         if i != v{
             t.Error("Sorting was not correct")
         }
