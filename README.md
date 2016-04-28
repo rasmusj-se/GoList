@@ -81,6 +81,7 @@ sorter.Less = func (a interface{}, b interface{}) bool {
 **Sort**
 
 You must use the list type `Sortable` or `[]interface{}`.
+
 *I'm looking for other solutions to this to allow sorting of already defined lists*
 
 ```
