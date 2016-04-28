@@ -70,27 +70,22 @@ Best: **O**(1), Worst: **O**(1)
 
 **Comparer**
 
-You will need to define your own comparer for your data types.
-Here is an example for an int list.
+You will need to define your own comparer for your data types. Here is an example for an int list.
 
 ```
 sorter.Less = func (a interface{}, b interface{}) bool {
-    return a.(int) < b.(int)
+    return a.(int) < b.(int) //For example
 }
 ```
 
-**Put**
-
-Due to the design of Go you will have to commit yor list to the sorter to have them sorted
-
-*I'm looking for a better solution to this as it adds O(n) to the execution time*
-
-`sorter.Put(value)`
-
-Best: **O**(n), Worst: **O**(n)
-
 **Sort**
 
-`sorted, err := sorter.Sort()`
+You must use the list type `Sortable` or `[]interface{}`.
+*I'm looking for other solutions to this to allow sorting of already defined lists*
+
+```
+list := GoList.Sortable{9,8,7,6,5,4,3,2,1,0} //For example
+list, err := sorter.Sort(list)
+```
 
 Best: **O**(n^2), Worst: **O**(n^2)
