@@ -20,15 +20,15 @@ hashmap := &HashMap{}
 hashmap.Initialize()
 ```
 
-Insert: `.Insert(key string, value interface{})` 
+`.Insert(key string, value interface{})` 
 
 Best: O(1). Worst: O(n)
 
-Get: `.Get(key string) (interface{})` 
+`.Get(key string) (interface{})` 
 
 Best: O(1). Worst: O(n)
 
-Insertion: `hashmap.Insert(key string, value interface{})` 
+`.Remove(key string, value interface{})` 
 
 Best: O(1). Worst: O(n)
 
