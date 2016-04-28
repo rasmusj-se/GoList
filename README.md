@@ -20,6 +20,12 @@ Best: **O**(1), Worst: **O**(1)
 
 Best: **O**(1), Worst: **O**(1)
 
+**Peek**
+
+`value := stack.Peek()`
+
+Best: **O**(1), Worst: **O**(1)
+
 **Count**
 
 `stack.Count()`
