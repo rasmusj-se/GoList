@@ -1,6 +1,7 @@
 # GoList is a datastructure implementation in Go
 
-A more detailed documentation is available at https://godoc.org/github.com/rasmusj-se/GoList
+[![GoDoc](https://godoc.org/github.com/rasmusj-se/GoList?status.svg)](https://godoc.org/github.com/rasmusj-se/GoList)
+[![GitHub issues](https://img.shields.io/github/issues/rasmusj-se/GoList.svg)](https://github.com/rasmusj-se/GoList/issues)
 
 ## Stack
 
