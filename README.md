@@ -31,3 +31,33 @@ Best: **O**(1), Worst: **O**(1)
 `stack.Count()`
 
 Best: **O**(1), Worst: **O**(1)
+
+## Queue
+
+**Initialization**
+
+`queue := &Queue{}`
+
+**Enqueue**
+
+`queue.Enqueue("Value")`
+
+Best: **O**(n), Worst: **O**(n)
+
+**Dequeue**
+
+`value := queue.Dequeue()`
+
+Best: **O**(1), Worst: **O**(1)
+
+**Peek**
+
+`value := queue.Peek()`
+
+Best: **O**(1), Worst: **O**(1)
+
+**Count**
+
+`queue.Count()`
+
+Best: **O**(1), Worst: **O**(1)
