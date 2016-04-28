@@ -4,6 +4,7 @@ package GoList
 type Queue struct{
     count int
     top *node
+    bottom *node
 }
 
 //Enqueue puts an item ino the queue
@@ -15,6 +16,7 @@ func (queue *Queue) Enqueue(value interface{}){
             Value: value,
             Child: nil,
         }
+        queue.bottom = queue.top.Child
         return
     }
     

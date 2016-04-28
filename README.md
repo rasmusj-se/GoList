@@ -6,7 +6,7 @@ A more detailed documentation is available at https://godoc.org/github.com/rasmu
 
 **Initialization**
 
-`stack := &Stack{}`
+`stack := &GoList.Stack{}`
 
 **Push**
 
@@ -36,7 +36,7 @@ Best: **O**(1), Worst: **O**(1)
 
 **Initialization**
 
-`queue := &Queue{}`
+`queue := &GoList.Queue{}`
 
 **Enqueue**
 
@@ -61,3 +61,36 @@ Best: **O**(1), Worst: **O**(1)
 `queue.Count()`
 
 Best: **O**(1), Worst: **O**(1)
+
+## Insort
+
+**Initialization**
+
+` sorter := &GoList.Insort{}`
+
+**Comparer**
+
+You will need to define your own comparer for your data types.
+Here is an example for an int list.
+
+```
+sorter.Less = func (a interface{}, b interface{}) bool {
+    return a.(int) < b.(int)
+}
+```
+
+**Put**
+
+Due to the design of Go you will have to commit yor list to the sorter to have them sorted
+
+*I'm looking for a better solution to this as it adds O(n) to the execution time*
+
+`sorter.Put(value)`
+
+Best: **O**(n), Worst: **O**(n)
+
+**Sort**
+
+`sorted, err := sorter.Sort()`
+
+Best: **O**(n^2), Worst: **O**(n^2)
