@@ -11,23 +11,22 @@ type Queue struct {
 func (queue *Queue) Enqueue(value interface{}) {
 	queue.count++
 
+	//Initialize of not initialized
 	if queue.top == nil {
 		queue.top = &node{
 			Value: value,
 			Child: nil,
 		}
-		queue.bottom = queue.top.Child
+		queue.bottom = queue.top
 		return
 	}
 
-	cursor := queue.top
-	for cursor.Child != nil {
-		cursor = cursor.Child
-	}
-	cursor.Child = &node{
+	queue.bottom.Child = &node{
 		Value: value,
 		Child: nil,
 	}
+
+	queue.bottom = queue.bottom.Child
 }
 
 //Dequeue returns first item in the queue and removes it

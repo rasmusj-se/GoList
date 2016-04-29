@@ -46,7 +46,7 @@ Best: **O**(1), Worst: **O**(1)
 
 `queue.Enqueue("Value")`
 
-Best: **O**(n), Worst: **O**(n)
+Best: **O**(1), Worst: **O**(1)
 
 **Dequeue**
 
