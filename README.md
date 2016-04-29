@@ -1,10 +1,10 @@
 # GoList is a datastructure implementation in Go
 
-[![GoDoc](https://godoc.org/github.com/rasmusj-se/GoList?status.svg)](https://godoc.org/github.com/rasmusj-se/GoList)
 [![GitHub issues](https://img.shields.io/github/issues/rasmusj-se/GoList.svg)](https://github.com/rasmusj-se/GoList/issues)
 [![Build Status](https://travis-ci.org/rasmusj-se/GoList.svg?branch=master)](https://travis-ci.org/rasmusj-se/GoList)
+[![Go Report Card](https://goreportcard.com/badge/github.com/rasmusj-se/GoList)](https://goreportcard.com/report/github.com/rasmusj-se/GoList)
+[![GoDoc](https://godoc.org/github.com/rasmusj-se/GoList?status.svg)](https://godoc.org/github.com/rasmusj-se/GoList)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
-
 
 ## Stack
 
