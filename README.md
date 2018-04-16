@@ -6,6 +6,8 @@
 [![GoDoc](https://godoc.org/github.com/rasmusj-se/GoList?status.svg)](https://godoc.org/github.com/rasmusj-se/GoList)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 
+`This project is not maintained. It was created as a way to learn how to adopt datastructures and algorithms in Go.`
+
 ## Stack
 
 **Initialization**
